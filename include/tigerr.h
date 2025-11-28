@@ -13,8 +13,6 @@
 #define TIGERR_RELEASE_MODE
 #endif
 
-namespace tg {
-
 	inline void LogToFile(std::string filePath, std::string contents) {
 		std::filesystem::path fsPath(filePath);
 		if (std::filesystem::exists(fsPath)) {
@@ -92,8 +90,6 @@ namespace tg {
 		}
 
 	}
-}
-
 /*
 	Error Code Lookup:
 	Code 100 - Invalid Error Severity, check "errorSeverity" parameter and make sure its either NOTICE, ALERT, or FAILURE
